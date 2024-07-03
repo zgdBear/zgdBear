@@ -129,7 +129,7 @@
                 <li>
                     <span style=" font-weight: 600;">数据同步：</span>
                     <div>对于需要半实时的数据迁移采用kafka异步接口的方式进行数据迁移。</div>
-                    <div>涉及到事务数据，则采用逻辑推送加kafka保证最终一致</div>
+                    <div>涉及到<span class="zd">事务数据，则采用逻辑推送加kafka保证最终一致</span></div>
                 </li>
             </ul>
             <div style=" font-weight: 600;">数据迁移项目</div>
@@ -147,8 +147,8 @@
             </ul>
 
             <div style=" font-weight: 600;">取得结果:</div>
-            <div>客户邀约项目是由数仓方推送日40w(老系统生产验证极限1500w)数据到接口表再由任务分发到
-                分表中，根据专营店分配128张分表，并且独立库，读写分离等方式以缓解查库压力。</div>
+            <div>客户邀约项目是由数仓方推送日<span class="zd">40w</span>(老系统生产验证极限<span class="zd">1500w</span>)数据到接口表再由任务分发到
+                分表中，根据专营店分配<span class="zd">128</span>张分表，并且独立库，读写分离等方式以<span class="zd">缓解查库压力</span>。</div>
             <br />
             <div style="font-size: 18px; font-weight: 600;">2.深圳华大智造FSSC共享报账平台</div>
             <div style=" font-weight: 600;">开发技术应用：</div>
@@ -176,7 +176,7 @@
             <div style=" font-weight: 600;">项目攻克:</div>
             <ul class="ul-f">
                 <li>
-                    <div>对于报表计算量庞大的问题，依据当时的情况再三斟酌后决定采用异步批处理的方式，只响应
+                    <div>对于<span class="zd">报表计算量庞大</span>的问题，依据当时的情况再三斟酌后决定采用异步批处理的方式，只响应
                         阶段性的准确数据保证速度。</div>
                 </li>
                 <li>
@@ -276,6 +276,9 @@
     }
     .ul-f{
         margin: 4px;
+    }
+    .zd{
+        color: red;
     }
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
